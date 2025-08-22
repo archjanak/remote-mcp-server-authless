@@ -1,7 +1,9 @@
 {
 	"name": "remote-mcp-server-authless",
-	"version": "0.0.0",
+	"version": "1.0.0",
+	"type":"module",
 	"private": true,
+	"main": "index.js",
 	"scripts": {
 		"deploy": "wrangler deploy",
 		"dev": "wrangler dev",
@@ -12,13 +14,15 @@
 		"type-check": "tsc --noEmit"
 	},
 	"dependencies": {
-		"@modelcontextprotocol/sdk": "1.17.1",
+		"@modelcontextprotocol/sdk": "1.17.3",
 		"agents": "^0.0.109",
-		"zod": "^3.25.67"
+		"zod": "^3.25.76",
+		"openmeteo": "^1.2.0"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^2.1.3",
 		"typescript": "5.8.3",
-		"wrangler": "^4.27.0"
+		"wrangler": "^4.27.0",
+		"@types/node": "^24.3.0"
 	}
 }
